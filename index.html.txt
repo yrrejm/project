@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네트워크 토폴로지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>네트워크 토폴로지</h1>
+        <p>프로젝트의 전체 네트워크 구조를 한눈에 살펴보세요.</p>
+    </header>
+
+    <main>
+        <section class="main-topology">
+            <img src="topology.png" alt="전체 네트워크 토폴로지" id="main-image">
+        </section>
+
+        <section class="detail-section">
+            <h2>상세 구성 요소</h2>
+            <div class="gallery">
+                <div class="gallery-item" data-src="detail1.jpg" data-description="서버 팜 구성: 부하 분산 및 고가용성 설정을 보여줍니다.">
+                    <img src="detail1.jpg" alt="서버 팜">
+                </div>
+                <div class="gallery-item" data-src="detail2.jpg" data-description="방화벽 설정: 네트워크 보안 정책과 룰셋을 설명합니다.">
+                    <img src="detail2.jpg" alt="방화벽">
+                </div>
+                <div class="gallery-item" data-src="detail3.jpg" data-description="라우팅 프로토콜: OSPF 및 BGP 라우팅 설정 예시입니다.">
+                    <img src="detail3.jpg" alt="라우팅">
+                </div>
+                </div>
+        </section>
+    </main>
+
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption" class="modal-caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Project. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
